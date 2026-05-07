@@ -1,0 +1,11 @@
+{
+  "info": {
+    "en": {
+      "message": "The method is not allowed for the requested URL."
+    },
+    "fa": {
+      "message": "خطای غیر منتظره رخ داد."
+    }
+  },
+  "result_code": 405
+}
