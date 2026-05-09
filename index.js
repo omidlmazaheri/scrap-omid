@@ -108,7 +108,7 @@ async function fetchAllNumbers() {
                 console.error('❌ خطا از سمت سرور:', errorMsg);
                 
                 // ✅ اصلاح: پاس دادن totalScrapedCount به تابع ذخیره خطا
-                saveErrorToDB(errorMsg, 0, totalScrapedCount);
+                saveErrorToDB(`result code:${response.data.result_code}, message: ${errorMsg}` , 0, totalScrapedCount);
 
                 if (errorMsg.includes("تعداد تلاش های غیرمجاز")) {
                     console.log('⏳ مسدود موقت. در حال صبر کردن ۶۰ ثانیه...');
@@ -118,7 +118,7 @@ async function fetchAllNumbers() {
                     continue;
                 }
                 break;
-            }
+            } ///NJmJnJAhlj
 
             const rawNumbers = response.data.numbers;
             if (!rawNumbers || rawNumbers.length === 0) {
