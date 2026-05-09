@@ -28,3 +28,4 @@ dist-ssr
 /blob-report/
 /playwright/.cache/
 dist/
+scrap_data.db
